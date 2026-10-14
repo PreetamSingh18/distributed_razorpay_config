@@ -34,6 +34,9 @@ spring:
 
 eureka:
   client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
   instance:
@@ -59,8 +62,4 @@ app:
       refund: refunds.events
       settlement: settlements.events
 
-eureka:
-  client:
-    enabled: false
-    register-with-eureka: false
-    fetch-registry: false
+
